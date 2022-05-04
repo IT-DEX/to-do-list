@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import clock from './time.jpg';
+import { Plan } from './Plan';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      
+      <div className='container'>
+        <div className='header'>
+          <p className='headingOne'>TO-DO-LIST</p>
+          <p className='headingTwo'>Enter your plans for today</p>
+        </div>
+
+        <div className='headerTwo'>
+          
+        </div>
+
+        <div>
+           <Plan/>
+        </div>
+       
+
+        <div className='image'>
+          <img src = {clock} width="300px" alt="clock" />
+        </div>
+        
+      </div>
+    
     </div>
   );
 }
